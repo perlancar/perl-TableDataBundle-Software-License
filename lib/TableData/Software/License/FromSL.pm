@@ -10,6 +10,8 @@ with 'TableDataRole::Source::CSVInDATA';
 # DIST
 # VERSION
 
+# STATS
+
 1;
 # ABSTRACT: List of software license from Software::License::* modules
 
