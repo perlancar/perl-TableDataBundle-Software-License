@@ -1,3 +1,10 @@
+0.003   2023-02-07  Released-By: PERLANCAR; Urgency: low
+
+        - No data changes.
+
+        - [build] Use TableData dzil & pod weaver plugin for nicer POD.
+
+
 0.002   2022-07-27  Released-By: PERLANCAR; Urgency: medium
 
         - Add tabledata module: Software::License::FromRPL.

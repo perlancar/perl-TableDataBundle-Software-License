@@ -20,4 +20,4 @@ with 'TableDataRole::Source::CSVInDATA';
 =cut
 
 __DATA__
-# COMMAND: echo "name,summary"; lcpan mods -l --namespace Software::License --format csv | csv-grep - -He 'return 0 if $_->{module} eq "Software::License" || $_->{module} =~ /::(or_later|None|Custom|CCpack)$/ || $_->{abstract} =~ /pseudo/ || $_->{abstract} !~ /\S/; 1' | csv-munge-row - -He '$_->{module} =~ s/Software::License:://' | csv-select-fields - module abstract --no-output-header
+# COMMAND: echo "name,summary"; lcpan mods -l --namespace Software::License --format csv | csv-grep - -He 'return 0 if $_->{module} eq "Software::License" || $_->{module} =~ /::(or_later|None|Custom|CCpack)$/ || $_->{abstract} =~ /pseudo/ || $_->{abstract} !~ /\S/; 1' | csv-munge-row - -He '$_->{module} =~ s/Software::License:://' | csv-select-fields - -f module -f abstract --no-output-header

@@ -1,0 +1,7 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+
+use File::Slurper qw(write_file);
+# COMMAND: echo "name,summary"; perl -MRegexp::Pattern::License -E'$re=\%Regexp::Pattern::License::RE; my @rows; for my $key (sort keys %$re) { my %row; my $rec = $re->{$key}; next unless $rec->{name} && $rec->{caption}; $row{name} = $rec->{name}; $row{caption} = $rec->{caption}; $row{name} =~ s/"/""/g; $row{caption} =~ s/"/""/g; printf qq("%s","%s"\n), $row{name}, $row{caption} }'
